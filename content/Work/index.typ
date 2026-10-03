@@ -7,7 +7,7 @@
 
 = Work
 
-我主要做（数学）教育；我更相信社会学的世界观，但是有的时候我需要心理学视角让问题变得简单一些。#footnote[就这一点，大家可以读一下 Healy, K. (2017). Fuck Nuance. _Sociological Theory_, _35_(2), 118–127. #link("https://doi.org/10.1177/0735275117709046")[https://doi.org/10.1177/0735275117709046]]
+我主要做（数学）教育，擅长Bayesian approach和IRT建模；我更相信社会学的世界观，但是有的时候我需要心理学视角让问题变得简单一些。#footnote[就这一点，大家可以读一下 Healy, K. (2017). Fuck Nuance. _Sociological Theory_, _35_(2), 118–127. #link("https://doi.org/10.1177/0735275117709046")[https://doi.org/10.1177/0735275117709046]]
 
 == Pipeline
 

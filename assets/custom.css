@@ -119,10 +119,11 @@ html[data-theme="dark"] {
 }
 html[data-theme="dark"] a.faq-item:any-link { border-top-color: #3a3631; }
 
-/* 标签 */
-.post-tags { font-family: var(--font-ui); font-size: 1.2rem; letter-spacing: 0.04em; }
-a.tag:any-link { color: #9a918a; text-decoration: none; background: none; margin-right: 0.6em; }
-a.tag:hover { color: var(--theme-heading); }
+/* 标签：小号胶囊 */
+.post-tags { font-family: var(--font-ui); font-size: 0.95rem; letter-spacing: 0.05em; margin-top: -0.6rem; }
+a.tag:any-link { display: inline-block; color: #9a918a; text-decoration: none; background: none; margin-right: 0.4em; padding: 0.05em 0.7em; border: 1px solid #e6ddd2; border-radius: 999px; }
+a.tag:hover { color: var(--theme-heading); border-color: #c9bfb3; }
+html[data-theme="dark"] a.tag:any-link { border-color: #3a3631; }
 
 /* 当前栏目：深色 */
 .site-nav a.is-active:any-link { color: var(--theme-heading); }

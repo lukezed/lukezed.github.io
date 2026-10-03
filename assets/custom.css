@@ -1,0 +1,131 @@
+/*******************************************************************************
+CUSTOM STYLES
+
+Add your custom CSS styles here to override or extend the default styles.
+*******************************************************************************/
+
+/* Fonts: 正文 LXGW Bright（霞鹜文楷 + 配套英文），标题 Source Sans 3，导航/元信息 Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&family=Montserrat:wght@400;600&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkaibright@2.0.0/dist/LXGWBright-Regular/result.css");
+@import url("https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkaibright@2.0.0/dist/LXGWBright-Italic/result.css");
+@import url("https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkaibright@2.0.0/dist/LXGWBright-Medium/result.css");
+@import url("https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkaibright@2.0.0/dist/LXGWBright-Light/result.css");
+
+:root {
+	--font-body: "LXGW Bright", sans-serif;
+	--font-head: "Source Sans 3", "LXGW Bright Medium", sans-serif;
+	--font-ui: Montserrat, "LXGW Bright", sans-serif;
+	--theme-text: #4a423c; /* 暖灰，比纯黑柔和 */
+	--theme-heading: #2f2925;
+}
+/* Light mode via system preference (theme.css re-declares colors there) */
+@media (prefers-color-scheme: light) {
+	html:not([data-theme]) {
+		--theme-text: #4a423c;
+		--theme-heading: #2f2925;
+	}
+}
+
+/* 正文 */
+body {
+	font-family: var(--font-body);
+	letter-spacing: 0.02em;
+}
+p, li {
+	line-height: 2;
+}
+
+/* 标题 */
+h1, h2, h3, h4, h5 {
+	font-family: var(--font-head);
+	font-weight: 600;
+	letter-spacing: 0;
+}
+.heading-en {
+	font-style: normal; /* 模板默认把标题里的英文变斜体，换成无衬线后不需要 */
+}
+
+/* 导航：全大写、加宽字距、灰色 */
+.site-nav a:any-link {
+	font-family: var(--font-ui);
+	font-weight: 600;
+	font-size: 1.15rem;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: #a69d96;
+}
+.site-nav a:hover {
+	color: var(--theme-heading);
+}
+
+/* 日期、作者等元信息 */
+.article-byline,
+footer {
+	font-family: var(--font-body); /* Montserrat 的英文比中文显大，混排时用正文字体 */
+	font-size: 1.05rem;
+	letter-spacing: 0.04em;
+}
+
+/* 边注：更轻、更小，不和正文抢 */
+.marginnote,
+.sidenote {
+	font-family: "LXGW Bright Light", var(--font-body);
+	line-height: 1.8;
+}
+
+.article-byline p {
+	font-size: inherit;
+	color: #9a918a;
+}
+
+/* 首页：常见问题区块（浅色底、扁长条） */
+.faq-band { width: 55%; margin: 2.5rem 0; }
+.kicker { font-family: var(--font-ui); font-weight: 600; font-size: 1.1rem; letter-spacing: 0.16em; text-transform: uppercase; color: #9a918a; margin-bottom: 0.6rem; }
+a.faq-item:any-link { display: flex; justify-content: space-between; align-items: baseline; gap: 1em; padding: 0.7rem 0; border-top: 1px solid #e6ddd2; text-decoration: none; background: none; }
+.faq-q { font-family: var(--font-body); font-size: 1.5rem; color: var(--theme-heading); }
+.faq-meta { font-family: var(--font-ui); font-size: 1.1rem; color: #9a918a; white-space: nowrap; }
+a.faq-item:hover .faq-q { text-decoration: underline; }
+@media (max-width: 760px) { .faq-band { width: 100%; } }
+
+/* 文章右上角的语言切换：zh / en */
+.lang-switch { font-family: var(--font-ui); font-size: 1.1rem; letter-spacing: 0.08em; color: #9a918a; }
+.lang-switch strong { color: var(--theme-heading); font-weight: 600; }
+.lang-switch a:any-link { color: #9a918a; text-decoration: none; background: none; }
+.lang-switch a:hover { color: var(--theme-heading); }
+
+/* 粗体用 LXGW Bright Medium，避免浏览器合成的假粗体 */
+strong, b { font-family: "LXGW Bright Medium", var(--font-body); font-weight: normal; }
+
+/* 护眼黑：暖色深灰底，米色字，不用纯黑纯白 */
+html[data-theme="dark"] {
+	--theme-bg: #23211e;
+	--theme-text: #c8bfb3;
+	--theme-heading: #e2d8cb;
+	--theme-code-bg: #2c2925;
+	--theme-pre-bg: #2c2925;
+	--theme-code-border: #3a3631;
+	--theme-pre-border: #3a3631;
+}
+@media (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		--theme-bg: #23211e;
+		--theme-text: #c8bfb3;
+		--theme-heading: #e2d8cb;
+		--theme-code-bg: #2c2925;
+		--theme-pre-bg: #2c2925;
+		--theme-code-border: #3a3631;
+		--theme-pre-border: #3a3631;
+	}
+}
+html[data-theme="dark"] a.faq-item:any-link { border-top-color: #3a3631; }
+
+/* 标签 */
+.post-tags { font-family: var(--font-ui); font-size: 1.2rem; letter-spacing: 0.04em; }
+a.tag:any-link { color: #9a918a; text-decoration: none; background: none; margin-right: 0.6em; }
+a.tag:hover { color: var(--theme-heading); }
+
+/* 当前栏目：深色 */
+.site-nav a.is-active:any-link { color: var(--theme-heading); }
+
+/* 用了边栏引用（margin-citations）的页面，不再显示文末的 References */
+article:has(.sidenote-cite) section[role="doc-bibliography"] { display: none; }

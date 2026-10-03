@@ -21,6 +21,8 @@
 
 Feel free to contact me for whatever reason! Strictly speaking I am an education researcher, but I am interested in modelling real-world problems more broadly, in meta-science, and in some more niche questions in sociology. For example, I am especially interested in Weber's social probabilism read through a Bourdieusian lens @strand2022chance @strand2022probabilistic, which can reinterpret almost everything in a rather Bayesian way.
 
+Some of my colleagues are curious about my coding background. To be honest, I only know R reasonably well and basic Python, and that's it. But I don't think the projects I have done beyond my "literacy" were done via vibe coding.#footnote[As #link("https://www.youtube.com/@mattpocockuk")[Matt Pocock] puts it: "We don't do vibe coding - this is a channel for real engineers solving real problems."]
+
 == Experience
 
 - *2026--Present*: Postdoctoral Researcher in Education, Faculty of Education, East China Normal University.

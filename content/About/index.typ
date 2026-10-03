@@ -19,7 +19,7 @@
   ORCID: #link("https://orcid.org/0000-0002-9535-6186")[0000-0002-9535-6186]
 ]
 
-Feel free to contact me for whatever reason! Strictly speaking I am an education researcher, but I am interested in modelling real-world problems more broadly, in meta-science, and in some more niche questions in sociology. For example, I am especially interested in Weber's social probabilism read through a Bourdieusian lens @strand2021 @strand2022, which can reinterpret almost everything in a rather Bayesian way.
+Feel free to contact me for whatever reason! Strictly speaking I am an education researcher, but I am interested in modelling real-world problems more broadly, in meta-science, and in some more niche questions in sociology. For example, I am especially interested in Weber's social probabilism read through a Bourdieusian lens @strand2022chance @strand2022probabilistic, which can reinterpret almost everything in a rather Bayesian way.
 
 == Experience
 

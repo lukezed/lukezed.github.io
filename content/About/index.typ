@@ -28,4 +28,4 @@ Feel free to contact me for whatever reason! Strictly speaking I am an education
 - *2020--2021*: MSc Research Methods with Education, University of Manchester.
 - *2019--2020*: MA in Mathematics and Pedagogy, The Education University of Hong Kong.
 
-#bibliography("refs.bib", style: "apa", title: "References")
+#html.elem("div", attrs: (class: "hidden-bib"))[#bibliography("refs.bib", style: "apa", title: "References")]

@@ -4,11 +4,11 @@
 // 加新文章：在这里加一行，再写文章本身
 #let posts = (
   (
-    title: "My academic-writing workflow",
+    title: "我的学术写作工作流",
     path: "/Blog/2026-10-03-academic-writing-workflow/",
     date: datetime(year: 2026, month: 10, day: 3),
     section: "Blog",
-    lang: "en",
+    lang: "zh",
     tags: ("workflow", "quarto", "writing"),
   ),
 )

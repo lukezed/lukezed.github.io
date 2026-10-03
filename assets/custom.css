@@ -71,6 +71,8 @@ footer {
 .sidenote {
 	font-family: "LXGW Bright Light", var(--font-body);
 	line-height: 1.8;
+	text-align: left; /* 边栏太窄，两端对齐会把字距拉得很开 */
+	hyphens: none;
 }
 
 .article-byline p {
@@ -128,5 +130,5 @@ html[data-theme="dark"] a.tag:any-link { border-color: #3a3631; }
 /* 当前栏目：深色 */
 .site-nav a.is-active:any-link { color: var(--theme-heading); }
 
-/* 用了边栏引用（margin-citations）的页面，不再显示文末的 References */
-article:has(.sidenote-cite) section[role="doc-bibliography"] { display: none; }
+/* 只在边栏显示引用、文末不列 References：把 #bibliography 包在 hidden-bib 里 */
+.hidden-bib { display: none; }

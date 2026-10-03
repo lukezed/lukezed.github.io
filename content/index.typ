@@ -17,5 +17,5 @@
 
 #html.elem("section", attrs: (class: "faq-band"))[
   #html.elem("div", attrs: (class: "kicker"))[Frequently asked（根本没人在问）]
-  #faq("My academic-writing workflow", "/Blog/2026-10-03-academic-writing-workflow/", "Blog · 2026-10-03")
+  #faq("我的学术写作工作流", "/Blog/2026-10-03-academic-writing-workflow/", "Blog · 2026-10-03")
 ]
